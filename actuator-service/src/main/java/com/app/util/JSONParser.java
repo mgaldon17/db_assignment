@@ -22,10 +22,10 @@ public class JSONParser {
 	
 	static String json = "...";
 	
-	public static Map<String, Object> read() {
+	public static Map<String, Object> read(String path) {
 		try {
 		    // create a reader
-		    Reader reader = Files.newBufferedReader(Paths.get("src/main/resources/requests/state.json"));
+		    Reader reader = Files.newBufferedReader(Paths.get(path));
 
 		    // create parser
 		    JsonObject parser = (JsonObject) Jsoner.deserialize(reader);

@@ -20,7 +20,9 @@ public class ApiController {
 	@GetMapping("/api/v1/FRA")
 	@ResponseBody
 	public Airport printAirport(@RequestParam(name="name", required=false) String name) {
-
+		
+		Map<String, Object> map = JSONParser.read("src/main/resources/requests/airport.json");
+		
 	    return new Airport("FRA", 50.050735, 8.570773, "Frankfurt", 364, "www.Frankfurt-airport.com", "Hessen", "Germany");
 	  }
 	
@@ -28,10 +30,18 @@ public class ApiController {
 	@ResponseBody
 	public Map<String, Object> printCountries(@RequestParam(name="name", required=false) String name) {
 		
+		Map<String, Object> countriesMap = JSONParser.read("src/main/resources/requests/country.json");
 		
-		Map<String, Object> map = JSONParser.read();
+	    return countriesMap;
+	  }
+	
+	@GetMapping("/api/v1/states")
+	@ResponseBody
+	public Map<String, Object> printStates(@RequestParam(name="name", required=false) String name) {
 		
-	    return map;
+		Map<String, Object> statesMap = JSONParser.read("src/main/resources/requests/state.json");
+		
+	    return statesMap;
 	  }
 	
 }
