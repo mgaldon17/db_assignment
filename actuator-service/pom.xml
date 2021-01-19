@@ -10,6 +10,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>actuator-service</artifactId>
+	
 	<version>0.0.1-SNAPSHOT</version>
 	<name>actuator-service</name>
 	<description></description>
@@ -39,8 +40,9 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-	</dependencies>
 
+	</dependencies>
+	
 	<build>
 		<plugins>
 			<plugin>
