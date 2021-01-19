@@ -1,19 +1,10 @@
 package com.app.util;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
 import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
-import java.util.Set;
-
-import org.apache.tomcat.util.json.ParseException;
-
-import com.github.cliftonlabs.json_simple.JsonArray;
 import com.github.cliftonlabs.json_simple.JsonObject;
 import com.github.cliftonlabs.json_simple.Jsoner;
 
@@ -42,9 +33,11 @@ public class JSONParser {
 		    
 		    reader.close();
 		    return map;
+		    
 		} catch (Exception ex) {
 		    ex.printStackTrace();
 		}
+		
 		return null;
 	}    
 

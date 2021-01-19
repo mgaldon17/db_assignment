@@ -19,11 +19,11 @@ public class ApiController {
 
 	@GetMapping("/api/v1/FRA")
 	@ResponseBody
-	public Airport printAirport(@RequestParam(name="name", required=false) String name) {
+	public Map<String, Object> printAirport(@RequestParam(name="name", required=false) String name) {
 		
-		Map<String, Object> map = JSONParser.read("src/main/resources/requests/airport.json");
+		Map<String, Object> airportMap = JSONParser.read("src/main/resources/requests/airport.json");
 		
-	    return new Airport("FRA", 50.050735, 8.570773, "Frankfurt", 364, "www.Frankfurt-airport.com", "Hessen", "Germany");
+	    return airportMap;
 	  }
 	
 	@GetMapping("/api/v1/countries_name")
