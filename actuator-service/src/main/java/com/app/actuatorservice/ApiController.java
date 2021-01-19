@@ -1,8 +1,5 @@
 package com.app.actuatorservice;
 
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.net.URLConnection;
 import java.util.Map;
 
 import org.springframework.stereotype.Controller;
@@ -11,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.app.util.JSONParser;
-import com.fasterxml.jackson.core.JsonParser;
 
 @Controller
 public class ApiController {
