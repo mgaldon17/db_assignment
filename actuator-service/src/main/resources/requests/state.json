@@ -1,0 +1,187 @@
+{
+  "status": true,
+  "statusCode": 200,
+  "district_type": "State",
+  "states": [
+    {
+      "abbr": "AN",
+      "name": "Andaman and Nicobar Islands",
+      "region": null
+    },
+    {
+      "abbr": "AP",
+      "name": "Andhra Pradesh",
+      "region": null
+    },
+    {
+      "abbr": "AR",
+      "name": "Arunachal Pradesh",
+      "region": null
+    },
+    {
+      "abbr": "AS",
+      "name": "Assam",
+      "region": null
+    },
+    {
+      "abbr": "BR",
+      "name": "Bihar",
+      "region": null
+    },
+    {
+      "abbr": "CH",
+      "name": "Chandigarh",
+      "region": null
+    },
+    {
+      "abbr": "CT",
+      "name": "Chhattisgarh",
+      "region": null
+    },
+    {
+      "abbr": "DN",
+      "name": "Dadra and Nagar Haveli",
+      "region": null
+    },
+    {
+      "abbr": "DD",
+      "name": "Daman and Diu",
+      "region": null
+    },
+    {
+      "abbr": "GA",
+      "name": "Goa",
+      "region": null
+    },
+    {
+      "abbr": "GJ",
+      "name": "Gujarat",
+      "region": null
+    },
+    {
+      "abbr": "HR",
+      "name": "Haryana",
+      "region": null
+    },
+    {
+      "abbr": "HP",
+      "name": "Himachal Pradesh",
+      "region": null
+    },
+    {
+      "abbr": "JK",
+      "name": "Jammu and Kashmir",
+      "region": null
+    },
+    {
+      "abbr": "JH",
+      "name": "Jharkhand",
+      "region": null
+    },
+    {
+      "abbr": "KA",
+      "name": "Karnataka",
+      "region": null
+    },
+    {
+      "abbr": "KL",
+      "name": "Kerala",
+      "region": null
+    },
+    {
+      "abbr": "LD",
+      "name": "Lakshadweep",
+      "region": null
+    },
+    {
+      "abbr": "MP",
+      "name": "Madhya Pradesh",
+      "region": null
+    },
+    {
+      "abbr": "MH",
+      "name": "Maharashtra",
+      "region": null
+    },
+    {
+      "abbr": "MN",
+      "name": "Manipur",
+      "region": null
+    },
+    {
+      "abbr": "ML",
+      "name": "Meghalaya",
+      "region": null
+    },
+    {
+      "abbr": "MZ",
+      "name": "Mizoram",
+      "region": null
+    },
+    {
+      "abbr": "NL",
+      "name": "Nagaland",
+      "region": null
+    },
+    {
+      "abbr": "DL",
+      "name": "National Capital Territory of Delhi",
+      "region": null
+    },
+    {
+      "abbr": "OR",
+      "name": "Odisha",
+      "region": null
+    },
+    {
+      "abbr": "PY",
+      "name": "Puducherry",
+      "region": null
+    },
+    {
+      "abbr": "PB",
+      "name": "Punjab",
+      "region": null
+    },
+    {
+      "abbr": "RJ",
+      "name": "Rajasthan",
+      "region": null
+    },
+    {
+      "abbr": "SK",
+      "name": "Sikkim",
+      "region": null
+    },
+    {
+      "abbr": "TN",
+      "name": "Tamil Nadu",
+      "region": null
+    },
+    {
+      "abbr": "TG",
+      "name": "Telangana",
+      "region": null
+    },
+    {
+      "abbr": "TR",
+      "name": "Tripura",
+      "region": null
+    },
+    {
+      "abbr": "UP",
+      "name": "Uttar Pradesh",
+      "region": null
+    },
+    {
+      "abbr": "UT",
+      "name": "Uttarakhand",
+      "region": null
+    },
+    {
+      "abbr": "WB",
+      "name": "West Bengal",
+      "region": null
+    }
+  ]
+}
