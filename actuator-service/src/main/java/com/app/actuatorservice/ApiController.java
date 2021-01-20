@@ -14,7 +14,7 @@ public class ApiController {
 
 	@GetMapping("/api/v1/LON")
 	@ResponseBody
-	public Map<String, Object> printAirport(@RequestParam(name="name", required=false) String name) {
+	public Map<String, Object> printAirport() {
 
 
 		Map<String, Object> airportMap = JSONParser.read("src/main/resources/requests/airport.json");
@@ -24,7 +24,7 @@ public class ApiController {
 	
 	@GetMapping("/api/v1/countries_name")
 	@ResponseBody
-	public Map<String, Object> printCountries(@RequestParam(name="name", required=false) String name) {
+	public Map<String, Object> printCountries() {
 		
 		Map<String, Object> countriesMap = JSONParser.read("src/main/resources/requests/country.json");
 		
@@ -33,7 +33,7 @@ public class ApiController {
 	
 	@GetMapping("/api/v1/states")
 	@ResponseBody
-	public Map<String, Object> printStates(@RequestParam(name="name", required=false) String name) {
+	public Map<String, Object> printStates() {
 		
 		Map<String, Object> statesMap = JSONParser.read("src/main/resources/requests/state.json");
 		

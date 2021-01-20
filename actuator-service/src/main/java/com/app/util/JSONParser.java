@@ -17,11 +17,12 @@ public class JSONParser {
 	
 	public static Map<String, Object> read(String path)  {
 		try {
-		    // create a reader
+			
 			try {
+				
 				Path p = Paths.get(path);
 				Reader reader = Files.newBufferedReader(p);
-				// create parser
+
 			    JsonObject parser = (JsonObject) Jsoner.deserialize(reader);
 			    Map<String, Object> map = new HashMap<String, Object>();
 			    
@@ -32,7 +33,7 @@ public class JSONParser {
 
 			    	map.put(keyStr, keyvalue);
 			    }
-			    
+
 			    reader.close();
 			    return map;
 			    
