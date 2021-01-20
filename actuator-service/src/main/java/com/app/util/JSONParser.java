@@ -33,7 +33,7 @@ public class JSONParser {
 
 			    	map.put(keyStr, keyvalue);
 			    }
-			    System.out.println(map.size());
+
 			    reader.close();
 			    return map;
 			    
