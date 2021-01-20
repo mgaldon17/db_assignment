@@ -1,5 +1,6 @@
 package com.app.actuatorservice;
 
+import java.nio.file.NoSuchFileException;
 import java.util.Map;
 
 import org.springframework.stereotype.Controller;
@@ -13,10 +14,11 @@ import com.app.util.JSONParser;
 public class ApiController {
 	
 
-	@GetMapping("/api/v1/FRA")
+	@GetMapping("/api/v1/LON")
 	@ResponseBody
 	public Map<String, Object> printAirport(@RequestParam(name="name", required=false) String name) {
-		
+
+
 		Map<String, Object> airportMap = JSONParser.read("src/main/resources/requests/airport.json");
 		
 	    return airportMap;
