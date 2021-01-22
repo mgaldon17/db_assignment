@@ -15,6 +15,9 @@ import com.github.cliftonlabs.json_simple.Jsoner;
 
 public class JSONParser {
 	
+	/**JSON parser used to read and parse the .json files containing the information of
+	 * the respective curl request.
+	**/
 	public static Map<String, Object> read(String path)  {
 		try {
 			
@@ -25,6 +28,8 @@ public class JSONParser {
 
 			    JsonObject parser = (JsonObject) Jsoner.deserialize(reader);
 			    Map<String, Object> map = new HashMap<String, Object>();
+			    
+			    //Filling the map with Key-Value from the json
 			    
 			    for (Object key : parser.keySet()) {
 			    	
