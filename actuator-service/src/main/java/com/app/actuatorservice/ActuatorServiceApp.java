@@ -10,7 +10,9 @@ public class ActuatorServiceApp{
 
   public static void main(String[] args) {
 	  	SpringApplication springApp = new SpringApplication(ActuatorServiceApp.class);
-	  	springApp.setDefaultProperties(Collections.singletonMap("server.port", "8888"));
+	  	/*The port has been changed to prevent possible conflicts when running the app due to possible 
+	  	processes that also listen to the port 8080*/
+	  	springApp.setDefaultProperties(Collections.singletonMap("server.port", "8888")); 
 	  	springApp.run();
   }
 

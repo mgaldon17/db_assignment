@@ -35,11 +35,13 @@ How to run the application
 The application has been exported as a standalone runnable jar. The instrutions to run the app are written assuming that Java JDK is intalled and set up 
 and that we are in Windows. To start it, please follow the steps:
 
-1) In the command line, go to /actuator-service
-2) Run the command java -jar DeutscheBank.jar
-3) Open a new terminal when the server starts up successfully
-4) Run the following commands to make the request:
-
+1) In the commend line, go to /actuator-service
+2) Run mvn clean install 
+3) In the command line, go to /actuator-service
+4) Run the command java -jar DeutscheBank.jar
+5) Open a new terminal when the server starts up successfully
+6) Run the following commands to make the request:
+	
 	1) curl localhost:8080/api/v1/LON
 	2) curl localhost:8080/api/v1/countries_name
 	3) curl localhost:8080/api/v1/states
@@ -48,3 +50,13 @@ and that we are in Windows. To start it, please follow the steps:
 	
 5) To close the app, simply make Ctrl+Z in the spring window to shut down the server. 
 
+Also, it is possible to run the application in Eclipse or another API. 
+To do so:
+
+1) Import the project as a Maven project
+2) Run maven install 
+3) Run ActuatorServiceApp.java as a Java application
+4) Execute the curl command in a command line as before
+
+If the app runs successfully, maven install will run until the end, pass the 15 tests and install dependencies. The server will start after executing 
+java -jar DeutscheBank.jar or running ActuatorServiceApp.java and will remain up. Lastly, the curl requests will provide the expected response.  
